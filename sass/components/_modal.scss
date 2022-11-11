@@ -51,9 +51,7 @@
   background-color: transparent;
   padding: 0;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredFlex();
   fill: #000000;
   transition: fill 250ms $transition-timing-function;
   &:hover,
@@ -151,9 +149,7 @@
 /* -------------checkbox-modal--------- */
 
 .checkbox-field {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex();
   margin-bottom: 30px;
 }
 

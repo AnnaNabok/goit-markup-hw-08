@@ -1026,8 +1026,8 @@ body {
 /* -------------checkbox-modal--------- */
 .checkbox-field {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 

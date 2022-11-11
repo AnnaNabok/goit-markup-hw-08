@@ -9,7 +9,7 @@
     color: $light-text-color;
   }
   &__soc-list {
-    @include centeredFlex(flex);
+    @include centeredFlex();
     margin-top: 20px;
     gap: 10px;
   }
@@ -17,7 +17,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    @include centeredFlex(flex);
+    @include centeredFlex();
     background-color: rgba(255, 255, 255, 0.1);
     fill: $light-text-color;
     transition: background-color 250ms $transition-timing-function,

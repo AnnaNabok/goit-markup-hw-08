@@ -7,9 +7,7 @@
 }
 
 .header-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include centeredFlex($justCont: space-between);
 }
 
 .menu-container {
