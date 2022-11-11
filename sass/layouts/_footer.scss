@@ -1,0 +1,17 @@
+.footer {
+  position: relative;
+  background-color: #2f303a;
+  padding: 60px 0;
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-section:first-child {
+  margin-right: 70px;
+}

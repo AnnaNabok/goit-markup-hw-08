@@ -1,0 +1,20 @@
+.logo {
+  @extend %link;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-right: 93px;
+}
+
+.logo-firstpart {
+  color: $accent-color;
+}
+
+.logo-secondpart {
+  color: #000000;
+}
+
+.footer__logo-secondpart {
+  color: $light-text-color;
+}
