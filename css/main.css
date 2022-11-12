@@ -329,12 +329,33 @@ body {
   margin: -1px;
 }
 
-.clients, .team, .portfolio-main, .advantages, .hero {
+.clients, .team, .portfolio-main, .hero {
   padding: 94px 0;
 }
 
 .logo, .footer-address__link, .footer-address__map-link, .portfolio-product, .auth-nav__link, .site-nav__link {
   text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .page-header {
@@ -459,18 +480,28 @@ body {
 }
 
 .advantages {
+  padding: 60px 0;
   font-size: 14px;
-  padding-bottom: 0;
 }
 
 .advantages-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  padding: 0;
 }
 
 .advantages-list__item {
-  flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .advantages-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .advantages-list__item::before {
   display: block;
