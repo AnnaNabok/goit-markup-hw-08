@@ -22,14 +22,14 @@
 
   <body>
     <!-------------------header------------------->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container menu-container">
-        <nav class="header-nav">
-          <!----------logo---------------->
-    <!-- <a href="/index.html" class="logo">
+        <nav class="header-nav"> 
+    <!----------logo---------------->
+    <a href="/index.html" class="logo">
             <span class="logo-firstpart">Web</span
             ><span class="logo-secondpart">Studio</span>
-          </a> -->
+          </a>
     <!----------menu---------------->
     <!-- <ul class="site-nav">
             <li class="site-nav__unit">
@@ -66,9 +66,19 @@
               ><span>+38 096 111 11 11</span></a
             >
           </li>
-        </ul>
+        </ul>-->
+        <button type="button" class="menu-button is-open" 
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button>
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="icon-menuclose" href="./images/icons.svg#icon-menuclose"></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu></div>
       </div>
-    </header> -->
+    </header> 
 
     <main>
       <!------------------------------hero------------------------------->
@@ -82,7 +92,7 @@
       </section> -->
 
       <!-----------------------------advantages-------------------------->
-      <!-- <section class="advantages section">
+      <section class="advantages section">
         <div class="container">
           <h2 class="visually-hidden">web-студія переваги</h2>
           <ul class="advantages-list list">
@@ -115,9 +125,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!------------------------ portfolio-main-page--------------------->
-      <!-- <section class="portfolio-main section">
+      <section class="portfolio-main section">
         <div class="container">
           <h2 class="section__tille title">Чим ми займаємось</h2>
           <ul class="portfolio-main__wrapper">
@@ -153,8 +163,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
-
+      </section>
       <!-----------------------------team-------------------------------->
       <section class="team section">
         <div class="container">
@@ -348,7 +357,7 @@
         </div>
       </section>
       <!-------------------------- clients------------------------------->
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
           <ul class="clients-list">
@@ -402,7 +411,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- <footer class="footer">
@@ -597,6 +606,7 @@
 
       document.body.style.paddingTop = "${pageHeaderHeight}px";
     </script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

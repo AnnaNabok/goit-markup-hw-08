@@ -1,4 +1,7 @@
 .portfolio-main {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   background-color: $light-text-color;
   &__wrapper {
     display: flex;

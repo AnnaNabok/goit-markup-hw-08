@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   background-color: $light-text-color;
   display: flex;
   align-items: center;
@@ -10,6 +11,38 @@
   min-height: 80px;
   // 80px - задал в 8.1 Репета. без него работало
   @include centeredFlex($justCont: space-between);
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  .icon-menuclose {
+    display: none;
+  }
+}
+
+.menu-button.is-open .icon-menuclose {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $light-text-color;
+
+  &.is-open {
+    display: block;
+  }
 }
 
 // .menu-container {
