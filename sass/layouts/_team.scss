@@ -1,13 +1,13 @@
 .team {
-  @extend %section;
   line-height: 1.19;
   background-color: #f5f4fa;
 }
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .team-member {
