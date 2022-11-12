@@ -19,115 +19,136 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  .icon-menuclose {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  .icon-menu {
     display: none;
   }
 }
 
-.menu-button.is-open .icon-menuclose {
+.menu-button.is-open .icon-menu {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .icon-menuclose {
   display: none;
 }
 
 .menu-container {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-color: $light-text-color;
+  // flex-grow: 1;
 
-  &.is-open {
-    display: block;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 48px 40px;
+
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 }
 
-// .menu-container {
-//   display: flex;
-//   align-items: center;
-// }
-//
-// .site-nav {
-//   display: flex;
-//   margin: 0;
-//   &__unit:not(:last-child) {
-//     margin-right: 50px;
-//   }
-//   &__link {
-//     @extend %link;
-//     position: relative;
-//     color: $dark-text-color;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     display: block;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//     transition: color 250ms $transition-timing-function;
-//     &:hover,
-//     &:focus {
-//       color: $accent-color;
-//     }
-//     &--current {
-//       color: $accent-color;
-//       &::after {
-//         position: absolute;
-//         bottom: 0;
-//         left: 0;
-//         display: inline-block;
-//         content: "";
-//         border-radius: 2px;
-//         margin-bottom: -1px;
-//         width: 100%;
-//         height: 4px;
-//         background-color: $accent-color;
-//         opacity: 1;
-//       }
-//     }
-//   }
-// }
-//
-// .auth-nav {
-//   display: flex;
-//   margin-left: auto;
-//   &__item {
-//     display: flex;
-//     justify-content: center;
-//   }
-//   &__link {
-//     @extend %link;
-//     display: flex;
-//     align-items: center;
-//     color: #757575;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     transition: color 250ms $transition-timing-function;
-//     &:hover,
-//     &:focus {
-//       color: $accent-color;
-//     }
-//   }
-//   &__item {
-//     & + & {
-//       margin-left: 50px;
-//     }
-//   }
-// }
-//
-// .auth-nav__icon {
-//   fill: $medium-text-color;
-//   margin-right: 10px;
-//   .auth-nav__link & {
-//     transition: fill 250ms $transition-timing-function;
-//   }
-//   .auth-nav__link:hover &,
-//   .auth-nav__link:focus & {
-//     fill: $accent-color;
-//   }
-// }
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin: 0;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  &__unit:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
+    @extend %link;
+    position: relative;
+    color: $dark-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms $transition-timing-function;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.site-nav__link--current {
+  color: $accent-color;
+  @media screen and (min-width: $tablet) {
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      content: "";
+      border-radius: 2px;
+      margin-bottom: -1px;
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      opacity: 1;
+    }
+  }
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms $transition-timing-function;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__item {
+    & + & {
+      margin-left: 50px;
+    }
+  }
+}
+
+.auth-nav__icon {
+  fill: $medium-text-color;
+  margin-right: 10px;
+  .auth-nav__link & {
+    transition: fill 250ms $transition-timing-function;
+  }
+  .auth-nav__link:hover &,
+  .auth-nav__link:focus & {
+    fill: $accent-color;
+  }
+}
