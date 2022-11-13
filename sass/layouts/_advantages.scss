@@ -1,5 +1,8 @@
 .advantages {
   font-size: 14px;
+  @include desktop {
+    padding-bottom: 0;
+  }
 }
 
 .advantages-list {
