@@ -273,6 +273,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 html {
@@ -323,6 +324,23 @@ body.modal-open {
 
 .logo, .footer-address__link, .footer-address__map-link, .portfolio-product, .auth-nav__link, .site-nav__link {
   text-decoration: none;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
 }
 
 .container {
@@ -507,14 +525,19 @@ body.modal-open {
 
 .portfolio {
   background-color: #ffffff;
-  padding: 94px 0;
 }
 
 .portfolio-buttons-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-buttons-list {
+    justify-content: center;
+  }
 }
 
 .portfolio-list {
@@ -524,7 +547,6 @@ body.modal-open {
 }
 .portfolio-list__item {
   width: 100%;
-  flex-basis: calc((100% - 60px) / 3);
 }
 @media screen and (min-width: 768px) {
   .portfolio-list__item {

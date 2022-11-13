@@ -12,10 +12,10 @@
 
 .team-member {
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-basis: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-basis: calc((100% - 90px) / 4);
   }
   background-color: $light-text-color;
@@ -23,7 +23,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  max-width: calc((100% - 90px) / 4);
+
   &__description {
     padding: 30px 10px;
   }

@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  height: 92px;
 }
 
 .client {
@@ -11,10 +10,10 @@
   @media screen and (min-width: 320px) {
     flex-basis: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-basis: calc((100% - 60px) / 3);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-basis: calc((100% - 150px) / 6);
   }
   height: 92px;
