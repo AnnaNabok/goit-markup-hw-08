@@ -60,8 +60,10 @@
 }
 
 .menu-wrapper {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav {
@@ -95,7 +97,7 @@
 
 .site-nav__link--current {
   color: $accent-color;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     &::after {
       position: absolute;
       bottom: 0;
@@ -114,7 +116,10 @@
 
 .auth-nav {
   display: flex;
-  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
   &__item {
     display: flex;
     justify-content: center;
