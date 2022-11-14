@@ -2,10 +2,16 @@
   .menu__soc {
     display: flex;
     width: 100%;
-    max-width: 430px;
+    flex-wrap: wrap;
+
+    @include mobile {
+      max-width: 430px;
+      justify-content: center;
+    }
     &-item {
       display: inline-block;
       height: 22px;
+      margin: 5px 0;
     }
 
     .menu__soc-item:not(:last-child) {

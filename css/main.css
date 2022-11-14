@@ -564,8 +564,7 @@ body.modal-open {
 }
 @media screen and (max-width: 767px) {
   .auth-nav__link--mail {
-    font-size: 18px;
-    color: #2196f3;
+    font-size: 22px;
     line-height: 1.17;
     color: #757575;
   }
@@ -618,15 +617,28 @@ body.modal-open {
   .menu__soc {
     display: flex;
     width: 100%;
-    max-width: 430px;
+    flex-wrap: wrap;
   }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .menu__soc {
+    max-width: 430px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
   .menu__soc-item {
     display: inline-block;
     height: 22px;
+    margin: 5px 0;
   }
+}
+@media screen and (max-width: 767px) {
   .menu__soc .menu__soc-item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
+}
+@media screen and (max-width: 767px) {
   .menu__soc .menu__soc-link {
     font-weight: 500;
     font-size: 18px;

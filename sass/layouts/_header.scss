@@ -168,11 +168,10 @@
         line-height: 1.18;
       }
       &--mail {
-        font-size: 18px;
+        font-size: 22px;
         @include mobile {
           font-size: 24px;
         }
-        color: $accent-color;
         line-height: 1.17;
         color: $medium-text-color;
       }
