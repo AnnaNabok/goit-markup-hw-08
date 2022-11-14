@@ -27,6 +27,12 @@
   }
 }
 
+@include tablet {
+  .menu-button {
+    display: none;
+  }
+}
+
 .menu-button .icon-cross {
   display: none;
 }

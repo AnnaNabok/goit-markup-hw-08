@@ -395,6 +395,11 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
 .menu-button .icon-cross {
   display: none;
 }
