@@ -180,6 +180,14 @@
 }
 
 .auth-nav__icon {
+  @media screen and (max-width: 767px) {
+    fill: $light-text-color;
+    margin-right: 0;
+  }
+  @include tablet {
+    fill: $medium-text-color;
+    margin-right: 10px;
+  }
   fill: $medium-text-color;
   margin-right: 10px;
   .auth-nav__link & {
