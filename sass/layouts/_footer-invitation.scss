@@ -1,5 +1,12 @@
 .footer-invitation {
-  margin-right: 93px;
+  margin: 0 auto 60px;
+  @include tablet {
+    margin-right: 72px;
+  }
+  @include desktop {
+    margin-right: 93px;
+  }
+
   &__text {
     font-weight: 700;
     font-size: 14px;

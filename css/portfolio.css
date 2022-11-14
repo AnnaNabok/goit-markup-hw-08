@@ -383,6 +383,7 @@ body.modal-open {
 .menu-button {
   display: inline-flex;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -452,13 +453,19 @@ body.modal-open {
   position: relative;
   color: #212121;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .site-nav__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
@@ -496,7 +503,8 @@ body.modal-open {
   justify-content: center;
 }
 .auth-nav__link {
-  display: flex;
+  display: block;
+  position: relative;
   align-items: center;
   color: #757575;
   font-weight: 500;
@@ -504,6 +512,13 @@ body.modal-open {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .auth-nav__link {
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .auth-nav__link:hover, .auth-nav__link:focus {
   color: #2196f3;
@@ -617,27 +632,53 @@ body.modal-open {
 .footer {
   position: relative;
   background-color: #2f303a;
+  text-align: center;
   padding: 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 60px 76px;
+  }
+  .footer__wrapper--tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 .footer__logo {
   display: inline-block;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer .footer-section:first-child {
+    margin-right: 70px;
+  }
+  .footer .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
-.footer-section:first-child {
-  margin-right: 70px;
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .footer-section {
+    margin-left: 60px;
+  }
 }
 
 .footer-address {
+  margin: 0 auto 60px;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
 .footer-address__item {
+  text-align: center;
   display: block;
   margin-bottom: 9px;
 }
@@ -645,6 +686,7 @@ body.modal-open {
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 9px;
+  text-align: center;
 }
 .footer-address__map-link:focus, .footer-address__map-link:hover {
   color: #2196f3;
@@ -661,7 +703,17 @@ body.modal-open {
 }
 
 .footer-invitation {
-  margin-right: 93px;
+  margin: 0 auto 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-invitation {
+    margin-right: 72px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-invitation {
+    margin-right: 93px;
+  }
 }
 .footer-invitation__text {
   font-weight: 700;
@@ -706,6 +758,12 @@ body.modal-open {
 
 .subscribe__container {
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__container {
+    flex-direction: row;
+  }
 }
 
 .subscribe__label {
@@ -718,10 +776,21 @@ body.modal-open {
   border-radius: 4px;
   font-size: 16px;
   padding: 15px 16px;
+  margin: 0 auto 20px;
   color: #ffffff;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: transparent;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+  }
 }
 .subscribe__input::-moz-placeholder {
   font-size: 16px;
@@ -753,7 +822,11 @@ body.modal-open {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
-  margin-right: 93px;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo-firstpart {
@@ -811,6 +884,8 @@ body.modal-open {
 }
 
 .subscribe-button {
+  height: 50px;
+  margin: 0 auto;
   color: #ffffff;
   background-color: #2196f3;
   font-family: Roboto, sans-serif;

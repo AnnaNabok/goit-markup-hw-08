@@ -16,6 +16,7 @@
 .menu-button {
   display: inline-flex;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -37,6 +38,9 @@
 
 .menu-container {
   background-color: $light-text-color;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
   // flex-grow: 1;
 
   @media screen and (max-width: 767px) {
@@ -81,8 +85,13 @@
     position: relative;
     color: $dark-text-color;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 40px;
+    line-height: 1.18;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.14;
+    }
     letter-spacing: 0.02em;
     display: block;
     padding-top: 32px;
@@ -116,7 +125,7 @@
 
 .auth-nav {
   display: flex;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-left: auto;
   }
 
@@ -125,13 +134,22 @@
     justify-content: center;
   }
   &__link {
+    //   position: relative;
+    display: block;
     @extend %link;
-    display: flex;
+    position: relative;
+    // display: flex;
     align-items: center;
-    color: #757575;
+    color: $medium-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+
+    @include tablet {
+      flex-direction: row;
+      font-size: 14px;
+      line-height: 1.14;
+    }
     letter-spacing: 0.02em;
     transition: color 250ms $transition-timing-function;
     &:hover,

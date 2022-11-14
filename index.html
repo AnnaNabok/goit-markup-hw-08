@@ -22,7 +22,7 @@
 
   <body>
     <!-------------------header------------------->
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container menu-wrapper">
         <a href="/index.html" class="logo">
           <span class="logo-firstpart">Web</span
@@ -81,7 +81,7 @@
           </ul>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!------------------------------hero------------------------------->
@@ -553,78 +553,90 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
-        <div class="footer-section">
-          <a href="/index.html" class="link logo footer__logo">
-            <span class="logo-firstpart">Web</span
-            ><span class="logo-secondpart footer__logo-secondpart">Studio</span>
-          </a>
-          <address class="footer-address">
-            <ul>
-              <li class="footer-address__item">
-                <a
-                  href="https://goo.gl/maps/REf4FK5SUBbMHxeN7"
-                  target="_blank"
-                  rel="noopener
+        <div class="footer__wrapper--tablet">
+          <div class="footer-section">
+            <a href="/index.html" class="link logo footer__logo">
+              <span class="logo-firstpart">Web</span
+              ><span class="logo-secondpart footer__logo-secondpart"
+                >Studio</span
+              >
+            </a>
+            <address class="footer-address">
+              <ul>
+                <li class="footer-address__item">
+                  <a
+                    href="https://goo.gl/maps/REf4FK5SUBbMHxeN7"
+                    target="_blank"
+                    rel="noopener
                 nofollow
                 noreferrer"
-                  class="footer-address__map-link link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                    class="footer-address__map-link link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="footer-address__link link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a href="tel:+380991111111" class="footer-address__link link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-invitation">
+            <p class="footer-invitation__text">Приєднуйтесь</p>
+            <ul class="footer-invitation__soc-list">
+              <li class="footer-invitation__soc-item">
+                <a class="footer-invitation__soc-link" href="#">
+                  <svg
+                    class="footer-invitation__soc-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                    >
+                  </svg>
+                </a>
               </li>
-              <li class="footer-address__item">
-                <a
-                  href="mailto:info@example.com"
-                  class="footer-address__link link"
-                  >info@example.com</a
-                >
+              <li class="footer-invitation__soc-item">
+                <a class="footer-invitation__soc-link" href="#">
+                  <svg
+                    class="footer-invitation__soc-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                    >
+                  </svg>
+                </a>
               </li>
-              <li class="footer-address__item">
-                <a href="tel:+380991111111" class="footer-address__link link"
-                  >+38 099 111 11 11</a
-                >
+              <li class="footer-invitation__soc-item">
+                <a class="footer-invitation__soc-link" href="#">
+                  <svg class="invitation__soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                    >
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-invitation__soc-item">
+                <a class="footer-invitation__soc-link" href="#">
+                  <svg class="invitation__soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                    >
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="footer-invitation">
-          <p class="footer-invitation__text">Приєднуйтесь</p>
-          <ul class="footer-invitation__soc-list">
-            <li class="footer-invitation__soc-item">
-              <a class="footer-invitation__soc-link" href="#">
-                <svg class="footer-invitation__soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                  >
-                </svg>
-              </a>
-            </li>
-            <li class="footer-invitation__soc-item">
-              <a class="footer-invitation__soc-link" href="#">
-                <svg class="footer-invitation__soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                  >
-                </svg>
-              </a>
-            </li>
-            <li class="footer-invitation__soc-item">
-              <a class="footer-invitation__soc-link" href="#">
-                <svg class="invitation__soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                  >
-                </svg>
-              </a>
-            </li>
-            <li class="footer-invitation__soc-item">
-              <a class="footer-invitation__soc-link" href="#">
-                <svg class="invitation__soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                  >
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="subscribe">
@@ -647,8 +659,8 @@
           </div>
         </div>
       </div>
-    </footer> -->
-
+    </footer>
+    <!-------------------------------- modal ----------------------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-button" data-modal-close>
