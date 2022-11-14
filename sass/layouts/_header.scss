@@ -76,6 +76,9 @@
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
+  @include tablet {
+    margin: 0 auto;
+  }
 
   &__unit:not(:last-child) {
     margin-right: 50px;
@@ -126,12 +129,25 @@
 .auth-nav {
   display: flex;
   @include tablet {
+    flex-direction: column;
     margin-left: auto;
+    gap: 10px;
+    padding: 21px 0;
+  }
+  @include desktop {
+    flex-direction: row;
   }
 
   &__item {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    @media screen and (max-width: 1199px) {
+      &__item {
+        & + & {
+          margin-left: 50px;
+        }
+      }
+    }
   }
   &__link {
     //   position: relative;
@@ -155,11 +171,6 @@
     &:hover,
     &:focus {
       color: $accent-color;
-    }
-  }
-  &__item {
-    & + & {
-      margin-left: 50px;
     }
   }
 }

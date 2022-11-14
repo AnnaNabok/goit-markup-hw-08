@@ -20,3 +20,8 @@
 .footer__logo-secondpart {
   color: $light-text-color;
 }
+
+.header__logo {
+  @include tablet {
+  }
+}
