@@ -30,6 +30,9 @@
     .footer__container {
       display: flex;
       align-items: baseline;
+      @include desktop {
+        flex-wrap: no-wrap;
+      }
     }
   }
 }

@@ -666,6 +666,11 @@ body.modal-open {
   display: flex;
   align-items: baseline;
 }
+@media screen and (min-width: 1200px) {
+  .footer .footer-address-section .footer__container {
+    flex-wrap: no-wrap;
+  }
+}
 
 .footer-section {
   display: flex;
@@ -753,9 +758,11 @@ body.modal-open {
   background-color: #2196f3;
 }
 
-.subscribe {
-  max-width: 570px;
-  text-align: left;
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    text-align: left;
+    max-width: 570px;
+  }
 }
 
 .subscribe__text {

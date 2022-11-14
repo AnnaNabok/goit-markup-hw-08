@@ -1,6 +1,8 @@
 .subscribe {
-  max-width: 570px;
-  text-align: left;
+  @include desktop {
+    text-align: left;
+    max-width: 570px;
+  }
 }
 .subscribe__text {
   display: block;
