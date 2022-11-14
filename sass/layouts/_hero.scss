@@ -44,11 +44,11 @@
 }
 
 .hero__container {
-  padding: 0;
+  padding: 118px 0;
   width: 100%;
   @include tablet {
     width: 768px;
-    padding: 0 15px;
+    padding: 60 15px;
   }
   @include desktop {
     width: 1200px;

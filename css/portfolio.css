@@ -691,7 +691,7 @@ body.modal-open {
 }
 @media screen and (min-width: 1200px) {
   .footer .footer-address-section .footer__container {
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
   }
 }
 
@@ -745,7 +745,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .footer-invitation {
-    margin: 0 auto;
+    margin: 0 auto 60px;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -608,13 +608,13 @@ body.modal-open {
 }
 
 .hero__container {
-  padding: 0;
+  padding: 118px 0;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .hero__container {
     width: 768px;
-    padding: 0 15px;
+    padding: 60 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1007,7 +1007,7 @@ body.modal-open {
 }
 @media screen and (min-width: 1200px) {
   .footer .footer-address-section .footer__container {
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
   }
 }
 
@@ -1061,7 +1061,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .footer-invitation {
-    margin: 0 auto;
+    margin: 0 auto 60px;
   }
 }
 @media screen and (min-width: 1200px) {
