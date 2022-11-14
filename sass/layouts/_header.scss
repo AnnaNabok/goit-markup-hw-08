@@ -127,6 +127,9 @@
 
 .auth-nav {
   display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
   @include tablet {
     flex-direction: column;
 

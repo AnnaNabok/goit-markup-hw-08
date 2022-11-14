@@ -499,6 +499,11 @@ body.modal-open {
 .auth-nav {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .auth-nav {
+    flex-direction: column-reverse;
+  }
+}
 @media screen and (min-width: 768px) {
   .auth-nav {
     flex-direction: column;
@@ -561,12 +566,33 @@ body.modal-open {
   fill: #2196f3;
 }
 
-.menu__soc {
-  display: flex;
-  width: 100%;
-  max-width: 430px;
+@media screen and (max-width: 767px) {
+  .menu__soc {
+    display: flex;
+    width: 100%;
+    max-width: 430px;
+  }
+  .menu__soc-item {
+    display: inline-block;
+    height: 22px;
+  }
+  .menu__soc .menu__soc-item:not(last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .menu__soc .menu__soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1, 22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .menu__soc .menu__soc-link:not(last-child) {
+    padding-right: 10px;
+  }
+  .menu__soc .menu__soc-link:not(first-child) {
+    padding-left: 10px;
+  }
 }
-
 .hero {
   color: #ffffff;
   text-align: center;
