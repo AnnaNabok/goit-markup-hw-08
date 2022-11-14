@@ -32,3 +32,9 @@
     }
   }
 }
+
+.menu__soc {
+  @include tablet {
+    display: none;
+  }
+}
