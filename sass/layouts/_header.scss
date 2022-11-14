@@ -16,23 +16,24 @@
 .menu-button {
   display: inline-flex;
   margin: 0;
-  margin-left: auto;
+  // margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
-  @include tablet {
-    display: none;
-  }
-  .icon-menu {
-    display: none;
-  }
+  // @include tablet {
+  //   display: none;
+  // }
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.menu-button.is-open .icon-menuclose {
+.menu-button.is-open .icon-cross {
   display: none;
 }
 
