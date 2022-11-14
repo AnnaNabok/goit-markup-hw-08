@@ -5,24 +5,24 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ececec;
+  min-height: 80px;
 }
 
 .header-nav {
-  min-height: 80px;
+  // min-height: 80px;
   // 80px - задал в 8.1 Репета. без него работало
   @include centeredFlex($justCont: space-between);
 }
 
 .menu-button {
-  display: inline-flex;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   margin: 0;
-  // margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
-  // @include tablet {
-  //   display: none;
-  // }
+  z-index: 1;
 }
 
 .menu-button .icon-cross {
@@ -38,6 +38,10 @@
 }
 
 .menu-container {
+  background-color: $light-text-color;
+  display: flex;
+  gap: 70px;
+
   @media screen and (max-width: 767px) {
     position: absolute;
     display: none;
@@ -46,33 +50,17 @@
     width: 100%;
     height: 100vh;
     padding: 48px 40px;
-    background-color: $light-text-color;
-    display: flex;
-    &.is-hidden {
+
+    &.is-open {
       display: block;
     }
   }
-  @include tablet {
-    gap: 70px;
-  }
-
   @include desktop {
-    gap: 315px;
     justify-content: space-between;
     align-items: center;
+    gap: 315px;
   }
 }
-// flex-direction: column;
-// flex-grow: 1;
-
-// @media screen and (max-width: 767px) {
-//   position: absolute;
-//   display: none;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100vh;
-//   padding: 48px 40px;
 
 .menu-wrapper {
   @include tablet {
