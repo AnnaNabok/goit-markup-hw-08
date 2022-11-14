@@ -561,6 +561,12 @@ body.modal-open {
   fill: #2196f3;
 }
 
+.menu__soc {
+  display: flex;
+  width: 100%;
+  max-width: 430px;
+}
+
 .hero {
   color: #ffffff;
   text-align: center;
