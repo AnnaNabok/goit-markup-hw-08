@@ -408,7 +408,12 @@ body.modal-open {
 .menu-container {
   background-color: #ffffff;
   display: flex;
-  gap: 88px;
+  gap: 70px;
+}
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    gap: 315px;
+  }
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -424,12 +429,17 @@ body.modal-open {
     display: block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .menu-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -499,15 +509,18 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .auth-nav {
     flex-direction: row;
+    align-items: center;
+    gap: 30px;
   }
 }
 .auth-nav__item {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
 }
-@media screen and (max-width: 1199px) {
-  .auth-nav__item__item + .auth-nav__item__item {
-    margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .auth-nav__item {
+    gap: 50px;
+    justify-content: flex-end;
   }
 }
 .auth-nav__link {
@@ -524,12 +537,17 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .auth-nav__link {
     flex-direction: row;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 .auth-nav__link:hover, .auth-nav__link:focus {
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__link {
+    padding: 12px 0;
+  }
 }
 
 .auth-nav__icon {
@@ -584,7 +602,6 @@ body.modal-open {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px 60px;
     height: 600px;
     max-width: 1600px;
   }
@@ -603,6 +620,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .hero__container {
     width: 1200px;
+    padding: 200px 60px;
   }
 }
 
@@ -1041,8 +1059,10 @@ body.modal-open {
   color: #2196f3;
 }
 
-.footer-invitation {
-  margin: 0 auto 60px;
+@media screen and (max-width: 767px) {
+  .footer-invitation {
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-invitation {
@@ -1161,13 +1181,18 @@ body.modal-open {
 
 .logo {
   font-family: Raleway, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 90px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
-    margin-right: 93px;
+    font-size: 24px;
   }
 }
 

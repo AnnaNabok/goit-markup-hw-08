@@ -39,7 +39,10 @@
 .menu-container {
   background-color: $light-text-color;
   display: flex;
-  gap: 88px;
+  gap: 70px;
+  @include desktop {
+    gap: 315px;
+  }
   // flex-direction: column;
 
   // flex-grow: 1;
@@ -57,13 +60,16 @@
       display: block;
     }
   }
+  @include desktop {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .menu-wrapper {
   @include tablet {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -129,17 +135,16 @@
   }
   @include desktop {
     flex-direction: row;
+    align-items: center;
+    gap: 30px;
   }
 
   &__item {
     display: flex;
-    justify-content: left;
-    @media screen and (max-width: 1199px) {
-      &__item {
-        & + & {
-          margin-left: 50px;
-        }
-      }
+    justify-content: flex-start;
+    @include desktop {
+      gap: 50px;
+      justify-content: flex-end;
     }
   }
   &__link {
@@ -156,14 +161,17 @@
 
     @include tablet {
       flex-direction: row;
-      font-size: 14px;
-      line-height: 1.14;
+      font-size: 12px;
+      line-height: 1.17;
     }
     letter-spacing: 0.02em;
     transition: color 250ms $transition-timing-function;
     &:hover,
     &:focus {
       color: $accent-color;
+    }
+    @include desktop {
+      padding: 12px 0;
     }
   }
 }

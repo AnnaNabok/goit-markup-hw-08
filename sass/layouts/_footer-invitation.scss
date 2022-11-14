@@ -1,8 +1,8 @@
 .footer-invitation {
-  margin: 0 auto 60px;
-  // @include tablet {
-  //   margin-right: 12px;
-  // }
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+
   @include desktop {
     margin-right: 93px;
   }
