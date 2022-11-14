@@ -87,8 +87,12 @@
     position: relative;
     color: $dark-text-color;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 1.18;
+    line-height: 1.13;
+    font-size: 32px;
+    @include mobile {
+      font-size: 40px;
+      line-height: 1.15;
+    }
 
     @include tablet {
       font-size: 14px;
@@ -129,6 +133,8 @@
   display: flex;
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
+    gap: 30px;
+    margin: 64px 0;
   }
   @include tablet {
     flex-direction: column;
@@ -151,6 +157,26 @@
     }
   }
   &__link {
+    @media screen and (max-width: 767px) {
+      font-weight: 500;
+      &--tel {
+        font-size: 24px;
+        @include mobile {
+          font-size: 36px;
+        }
+        color: $accent-color;
+        line-height: 1.18;
+      }
+      &--mail {
+        font-size: 18px;
+        @include mobile {
+          font-size: 24px;
+        }
+        color: $accent-color;
+        line-height: 1.17;
+        color: $medium-text-color;
+      }
+    }
     //   position: relative;
     display: block;
     @extend %link;
