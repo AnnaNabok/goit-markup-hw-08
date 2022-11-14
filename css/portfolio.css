@@ -388,7 +388,11 @@ body.modal-open {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .menu-button {
+    z-index: 1;
+  }
 }
 
 .menu-button .icon-cross {
