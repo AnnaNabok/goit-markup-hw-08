@@ -177,13 +177,26 @@
                 <source
                   type="image/webp"
                   srcset="
-                    ./images/worker-img-1.webp        1x,
-                    ./images/worker-img-1-tab.webp    1x,
                     ./images/worker-img-1-mob.webp    1x,
-                    ./images/worker-img-1-2x.webp     2x,
-                    ./images/worker-img-1-tab-2x.webp 2x,
                     ./images/worker-img-1-mob-2x.webp 2x
                   "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/worker-img-1-tab.webp    1x,
+                    ./images/worker-img-1-tab-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/worker-img-1.webp    1x,
+                    ./images/worker-img-1-2x.webp 2x
+                  "
+                  media="(max-width: 1200px)"
                 />
                 <img
                   loading="lazy"
