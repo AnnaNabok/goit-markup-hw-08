@@ -1,3 +1,7 @@
+.subscribe {
+  max-width: 570px;
+  text-align: left;
+}
 .subscribe__text {
   display: block;
   font-weight: 700;
@@ -19,10 +23,11 @@
 
 .subscribe__label {
   margin-right: 12px;
+  width: 100%;
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 100%;
   @include tablet {
     width: 450px;
   }

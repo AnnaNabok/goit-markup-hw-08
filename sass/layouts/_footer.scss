@@ -4,11 +4,14 @@
   text-align: center;
   padding: 60px 0;
   @include tablet {
-    // padding: 60px 76px;
     &__wrapper {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      margin-bottom: 60px;
+      @include desktop {
+        max-width: 520px;
+      }
     }
   }
 
@@ -16,9 +19,11 @@
     display: inline-block;
     margin: 0 auto 20px;
   }
-
-  @include desktop {
-    .footer-section:first-child {
+  .footer-address-section {
+    @include tablet {
+      margin-right: 165px;
+    }
+    @include desktop {
       margin-right: 70px;
     }
 
