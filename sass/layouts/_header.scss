@@ -31,6 +31,12 @@
   @media screen and (max-width: 767px) {
     z-index: 1;
   }
+  // fill: $dark-text-color;
+  // transition: fill 250ms $transition-timing-function;
+  // &:hover,
+  // &:focus {
+  //   fill: $accent-color;
+  // }
 }
 
 @include tablet {
@@ -39,11 +45,11 @@
   }
 }
 
-.menu-button .icon-cross {
+.menu-button .icon-menu {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-button.is-open .icon-menu {
   display: block;
 }
 
