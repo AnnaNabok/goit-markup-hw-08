@@ -671,7 +671,8 @@ body.modal-open {
   background-position: center;
   background-size: cover;
   height: 400px;
-  padding: 118px 24px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-mob.jpeg");
 }
@@ -682,7 +683,6 @@ body.modal-open {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    padding: 118px 60px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-tab.jpeg");
   }
 }
@@ -705,23 +705,8 @@ body.modal-open {
   .hero {
     height: 600px;
     max-width: 1600px;
-  }
-}
-
-.hero__container {
-  padding: 118px 0;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .hero__container {
-    width: 768px;
-    padding: 60 15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__container {
-    width: 1200px;
-    padding: 200px 60px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 

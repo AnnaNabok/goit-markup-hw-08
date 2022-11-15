@@ -8,7 +8,8 @@
   background-size: cover;
 
   height: 400px;
-  padding: 118px 24px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
   background-image: $hero-gradient, url("../images/hero-bg-mob.jpeg");
   @include retina-2x {
@@ -18,7 +19,6 @@
   }
 
   @include mobile {
-    padding: 118px 60px;
     background-image: $hero-gradient, url("../images/hero-bg-tab.jpeg");
     @include retina-2x {
       & {
@@ -40,19 +40,8 @@
     // padding: 200px 60px;
     height: 600px;
     max-width: 1600px;
-  }
-}
-
-.hero__container {
-  padding: 118px 0;
-  width: 100%;
-  @include tablet {
-    width: 768px;
-    padding: 60 15px;
-  }
-  @include desktop {
-    width: 1200px;
-    padding: 200px 60px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
