@@ -8,6 +8,12 @@
   min-height: 80px;
 }
 
+.header__logo {
+  @include tablet {
+    margin-right: 90px;
+  }
+}
+
 .header-nav {
   // min-height: 80px;
   // 80px - задал в 8.1 Репета. без него работало

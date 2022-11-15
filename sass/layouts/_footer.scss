@@ -2,16 +2,21 @@
   position: relative;
   background-color: #2f303a;
   text-align: center;
+  @include desktop {
+    text-align: left;
+  }
   padding: 60px 0;
-  @include tablet {
-    &__wrapper {
+
+  &__wrapper {
+    padding-bottom: 60px;
+    @include tablet {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 60px;
-      @include desktop {
-        max-width: 520px;
-      }
+    }
+    @include desktop {
+      justify-content: row;
+      padding-bottom: 0;
     }
   }
 
@@ -25,15 +30,15 @@
     }
     @include desktop {
       margin-right: 70px;
+      padding-bottom: 0;
     }
+  }
+}
 
-    .footer__container {
-      display: flex;
-      align-items: baseline;
-      @include desktop {
-        flex-wrap: nowrap;
-      }
-    }
+.footer__container {
+  @include desktop {
+    display: flex;
+    align-items: baseline;
   }
 }
 

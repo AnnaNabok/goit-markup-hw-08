@@ -1,18 +1,21 @@
 .footer-address {
-  margin: 0 auto 60px;
-  @include tablet {
-    margin-bottom: 0;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-bottom: 0;
   }
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
   &__item {
     text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
     @include desktop {
       text-align: left;
     }
     display: block;
-    margin-bottom: 9px;
   }
 
   &__map-link {
@@ -31,12 +34,56 @@
     @extend %link;
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms $transition-timing-function;
-    &:not(:nth-last-child(n)) {
-      margin-bottom: 9px;
-    }
+
     &:focus,
     &:hover {
       color: $accent-color;
     }
   }
 }
+
+//
+// ---------
+// .footer-address {
+//   margin: 0 auto;
+//   padding-bottom: 60px;
+//   @include desktop {
+//     padding-bottom: 0;
+//   }
+//   font-size: 14px;
+//   line-height: 1.71;
+//   font-style: normal;
+//   &__item {
+//     text-align: center;
+//     &:not(:last-child) {
+//       margin-bottom: 9px;
+//     }
+//     @include desktop {
+//       text-align: left;
+//     }
+//     display: block;
+//   }
+//
+//   &__map-link {
+//     @extend %link;
+//     color: $light-text-color;
+//     transition: color 250ms $transition-timing-function;
+//     margin-bottom: 9px;
+//     &:focus,
+//     &:hover {
+//       color: $accent-color;
+//     }
+//     text-align: center;
+//   }
+//
+//   &__link {
+//     @extend %link;
+//     color: rgba(255, 255, 255, 0.6);
+//     transition: color 250ms $transition-timing-function;
+//
+//     &:focus,
+//     &:hover {
+//       color: $accent-color;
+//     }
+//   }
+// }
