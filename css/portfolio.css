@@ -335,6 +335,7 @@ body.modal-open {
 
 .site-nav__link--current {
   color: #2196f3;
+  z-index: 11;
 }
 @media screen and (min-width: 768px) {
   .site-nav__link--current::after {
@@ -420,7 +421,7 @@ body.modal-open {
 
 .menu-button {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 15px;
   margin: 0;
   padding: 0;

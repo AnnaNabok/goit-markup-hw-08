@@ -1,5 +1,6 @@
 .site-nav__link--current {
   color: $accent-color;
+  z-index: 11;
   @media screen and (min-width: 768px) {
     &::after {
       position: absolute;
