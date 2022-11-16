@@ -3,7 +3,7 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-
+    margin-top: auto;
     @include mobile {
       max-width: 430px;
       justify-content: center;

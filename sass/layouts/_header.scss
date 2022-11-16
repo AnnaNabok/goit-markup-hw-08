@@ -15,8 +15,7 @@
 }
 
 .header-nav {
-  // min-height: 80px;
-  // 80px - задал в 8.1 Репета. без него работало
+  min-height: 80px;
   @include centeredFlex($justCont: space-between);
 }
 
@@ -31,12 +30,6 @@
   @media screen and (max-width: 767px) {
     z-index: 1;
   }
-  // fill: $dark-text-color;
-  // transition: fill 250ms $transition-timing-function;
-  // &:hover,
-  // &:focus {
-  //   fill: $accent-color;
-  // }
 }
 
 @include tablet {
@@ -56,6 +49,16 @@
 .menu-button.is-open .icon-cross {
   display: none;
 }
+
+// .menu-button .icon-cross {
+//   fill: $dark-text-color;
+//   transition: fill 250ms $transition-timing-function;
+// }
+//
+// .menu-button:hover .icon-cross,
+// .menu-button:focus .icon-cross {
+//   fill: $accent-color;
+// }
 
 .menu-container {
   background-color: $light-text-color;
@@ -192,12 +195,9 @@
         color: $medium-text-color;
       }
     }
-    //   position: relative;
     display: block;
     @extend %link;
     position: relative;
-    // display: flex;
-    align-items: center;
     color: $medium-text-color;
     font-weight: 500;
     font-size: 14px;

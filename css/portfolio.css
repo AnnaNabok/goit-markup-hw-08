@@ -391,6 +391,7 @@ body.modal-open {
 }
 
 .header-nav {
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -558,7 +559,6 @@ body.modal-open {
 .auth-nav__link {
   display: block;
   position: relative;
-  align-items: center;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
