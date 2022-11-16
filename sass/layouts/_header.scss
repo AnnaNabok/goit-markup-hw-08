@@ -28,7 +28,7 @@
   border: none;
   background-color: transparent;
   @media screen and (max-width: 767px) {
-    z-index: 1;
+    z-index: 10;
   }
 }
 
@@ -64,6 +64,7 @@
   background-color: $light-text-color;
   display: flex;
   gap: 70px;
+  z-index: 9;
 
   @media screen and (max-width: 767px) {
     position: absolute;
@@ -134,25 +135,6 @@
     &:hover,
     &:focus {
       color: $accent-color;
-    }
-  }
-}
-
-.site-nav__link--current {
-  color: $accent-color;
-  @media screen and (min-width: 768px) {
-    &::after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: inline-block;
-      content: "";
-      border-radius: 2px;
-      margin-bottom: -1px;
-      width: 100%;
-      height: 4px;
-      background-color: $accent-color;
-      opacity: 1;
     }
   }
 }
