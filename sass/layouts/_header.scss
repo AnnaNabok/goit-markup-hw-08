@@ -97,6 +97,9 @@
   margin: 0 auto;
   @media screen and (max-width: 767px) {
     flex-direction: column;
+    gap: 32px;
+    padding: 0;
+    margin: 0 0 100px 0;
   }
   &__unit:not(:last-child) {
     margin-right: 50px;
@@ -119,6 +122,10 @@
     }
     letter-spacing: 0.02em;
     display: block;
+    @media screen and (max-width: 767px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color 250ms $transition-timing-function;
@@ -153,7 +160,7 @@
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
     gap: 30px;
-    margin: 64px 0;
+    padding: 64px 0;
   }
   @include tablet {
     flex-direction: column;

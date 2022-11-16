@@ -470,6 +470,9 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .site-nav {
     flex-direction: column;
+    gap: 32px;
+    padding: 0;
+    margin: 0 0 100px 0;
   }
 }
 .site-nav__unit:not(:last-child) {
@@ -497,6 +500,12 @@ body.modal-open {
   .site-nav__link {
     font-size: 14px;
     line-height: 1.14;
+  }
+}
+@media screen and (max-width: 767px) {
+  .site-nav__link {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 .site-nav__link:hover, .site-nav__link:focus {
@@ -529,7 +538,7 @@ body.modal-open {
   .auth-nav {
     flex-direction: column-reverse;
     gap: 30px;
-    margin: 64px 0;
+    padding: 64px 0;
   }
 }
 @media screen and (min-width: 768px) {
