@@ -1503,8 +1503,8 @@ body.modal-open {
 /* -------------checkbox-modal--------- */
 .checkbox-field {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -1534,6 +1534,7 @@ body.modal-open {
   border-radius: 2px;
   margin-right: 8px;
 }
+
 .checkbox-input:checked + .checkbox-icon {
   border-color: #2196f3;
   background-color: #2196f3;

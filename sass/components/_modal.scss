@@ -155,7 +155,9 @@
 /* -------------checkbox-modal--------- */
 
 .checkbox-field {
-  @include centeredFlex();
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -180,16 +182,18 @@
   display: inline-block;
   width: 16px;
   height: 15px;
+
   border: 2px solid $dark-text-color;
   border-radius: 2px;
   margin-right: 8px;
-  .checkbox-input:checked + & {
-    border-color: $accent-color;
-    background-color: $accent-color;
-    background-image: url("../images/icon-check.svg");
-    background-size: contain;
-    background-origin: border-box;
-  }
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  border-color: $accent-color;
+  background-color: $accent-color;
+  background-image: url("../images/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .checkbox-label {
