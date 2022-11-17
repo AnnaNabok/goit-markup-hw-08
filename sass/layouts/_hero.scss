@@ -14,7 +14,7 @@
   background-image: $hero-gradient, url("../images/hero-bg-mob.jpeg");
   @include retina-2x {
     & {
-      background-image: url("../images/hero-bg-mob-2x.jpeg");
+      background-image: $hero-gradient, url("../images/hero-bg-mob-2x.jpeg");
     }
   }
 
@@ -22,7 +22,7 @@
     background-image: $hero-gradient, url("../images/hero-bg-tab.jpeg");
     @include retina-2x {
       & {
-        background-image: url("../images/hero-bg-tab-2x.jpeg");
+        background-image: $hero-gradient, url("../images/hero-bg-tab-2x.jpeg");
       }
     }
   }
@@ -31,7 +31,7 @@
     background-image: $hero-gradient, url("../images/hero-bg.jpg");
     @include retina-2x {
       & {
-        background-image: url("../images/hero-bg-2x.jpeg");
+        background-image: $hero-gradient, url("../images/hero-bg-2x.jpeg");
       }
     }
   }
@@ -48,7 +48,7 @@
 .hero-title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 5vw;
   line-height: 1.62;
   margin: 0 auto 30px;
   @include mobile {
