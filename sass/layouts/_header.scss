@@ -190,12 +190,12 @@
       line-height: 1.18;
     }
     &--mail {
-      line-height: 1.17;
-      color: $medium-text-color;
       font-size: 5vw;
       @include mobile {
         font-size: 24px;
       }
+      color: $medium-text-color;
+      line-height: 1.17;
     }
   }
   display: block;

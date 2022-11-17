@@ -605,9 +605,9 @@ body.modal-open {
 }
 @media screen and (max-width: 767px) {
   .auth-nav__link--mail {
-    line-height: 1.17;
-    color: #757575;
     font-size: 5vw;
+    color: #757575;
+    line-height: 1.17;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 480px) {
