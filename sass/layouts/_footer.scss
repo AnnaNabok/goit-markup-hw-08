@@ -8,15 +8,15 @@
   padding: 60px 0;
 
   &__wrapper {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
     @include tablet {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: baseline;
+      margin-bottom: 0;
     }
     @include desktop {
       justify-content: row;
-      padding-bottom: 0;
     }
   }
 
@@ -25,12 +25,11 @@
     margin: 0 auto 20px;
   }
   .footer-address-section {
-    @include tablet {
-      margin-right: 165px;
-    }
+    margin-bottom: 60px;
+
     @include desktop {
       margin-right: 70px;
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 }

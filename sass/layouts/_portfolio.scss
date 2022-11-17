@@ -19,6 +19,7 @@
   gap: 30px;
 
   &__item {
+    display: flex;
     width: 100%;
     @include tablet {
       flex-basis: calc((100% - 30px) / 2);
@@ -31,7 +32,9 @@
 
 .portfolio-product {
   @extend %link;
-  display: block;
+  // display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   transition: box-shadow 250ms $transition-timing-function;
@@ -52,6 +55,7 @@
     background-color: $light-text-color;
     border: 1px solid #eeeeee;
     border-top: transparent;
+    flex-grow: 1;
   }
   &__meta {
     line-height: 1.88;

@@ -37,7 +37,7 @@
   }
 
   @include desktop {
-    // padding: 200px 60px;
+    background-image: $hero-gradient, url("../images/hero-bg.jpg");
     height: 600px;
     max-width: 1600px;
     padding-top: 200px;

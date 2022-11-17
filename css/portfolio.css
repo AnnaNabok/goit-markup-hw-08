@@ -403,17 +403,26 @@ body.modal-open {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ececec;
-  min-height: 80px;
+  min-height: 60px;
 }
 
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 90px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
 
 .header-nav {
-  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -431,6 +440,7 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .menu-button {
     z-index: 10;
+    top: 10px;
   }
 }
 
@@ -454,7 +464,7 @@ body.modal-open {
 .menu-container {
   background-color: #ffffff;
   display: flex;
-  gap: 70px;
+  gap: 64px;
   z-index: 9;
 }
 @media screen and (max-width: 767px) {
@@ -471,6 +481,11 @@ body.modal-open {
   .menu-container.is-open {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    gap: 70px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -490,14 +505,12 @@ body.modal-open {
 
 .site-nav {
   display: flex;
-  margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
   .site-nav {
     flex-direction: column;
     gap: 32px;
     padding: 0;
-    margin: 0 0 100px 0;
   }
 }
 .site-nav__unit:not(:last-child) {
@@ -544,7 +557,6 @@ body.modal-open {
   .auth-nav {
     flex-direction: column-reverse;
     gap: 30px;
-    padding: 64 0 0 0;
     flex: 1 1 auto;
   }
 }
@@ -572,13 +584,11 @@ body.modal-open {
     justify-content: flex-end;
   }
 }
+
 .auth-nav__link {
   display: block;
   position: relative;
   color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -599,9 +609,9 @@ body.modal-open {
 }
 @media screen and (max-width: 767px) {
   .auth-nav__link--mail {
-    font-size: 22px;
     line-height: 1.17;
     color: #757575;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 480px) {
@@ -611,6 +621,8 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .auth-nav__link {
+    display: flex;
+    align-items: center;
     flex-direction: row;
     font-size: 12px;
     line-height: 1.17;
@@ -622,6 +634,9 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .auth-nav__link {
     padding: 12px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -649,6 +664,10 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
+  .menu-button__container {
+    display: flex;
+    margin-left: auto;
+  }
   .menu__soc {
     display: flex;
     width: 100%;
@@ -718,6 +737,7 @@ body.modal-open {
   gap: 30px;
 }
 .portfolio-list__item {
+  display: flex;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -732,7 +752,8 @@ body.modal-open {
 }
 
 .portfolio-product {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -752,6 +773,7 @@ body.modal-open {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-top: transparent;
+  flex-grow: 1;
 }
 .portfolio-product__meta {
   line-height: 1.88;
@@ -798,34 +820,32 @@ body.modal-open {
   }
 }
 .footer__wrapper {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__wrapper {
     justify-content: row;
-    padding-bottom: 0;
   }
 }
 .footer__logo {
   display: inline-block;
   margin: 0 auto 20px;
 }
-@media screen and (min-width: 768px) {
-  .footer .footer-address-section {
-    margin-right: 165px;
-  }
+.footer .footer-address-section {
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer .footer-address-section {
     margin-right: 70px;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -845,15 +865,9 @@ body.modal-open {
 
 .footer-address {
   margin: 0 auto;
-  padding-bottom: 60px;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-}
-@media screen and (min-width: 1200px) {
-  .footer-address {
-    padding-bottom: 0;
-  }
 }
 .footer-address__item {
   text-align: center;
