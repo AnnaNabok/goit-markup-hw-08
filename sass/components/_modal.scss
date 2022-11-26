@@ -197,7 +197,14 @@
 }
 
 .checkbox-label {
-  font-size: 14px;
+  font-size: 2.1vw;
+  @include mobile {
+  font-size: 2.6vw;
+  }
+  @media screen and (min-width: 545px) {
+    font-size: 14px;
+  }
+
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $medium-text-color;
