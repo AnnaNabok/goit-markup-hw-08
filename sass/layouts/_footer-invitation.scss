@@ -3,10 +3,6 @@
     margin: 0 auto;
   }
 
-  @include desktop {
-    margin-right: 93px;
-  }
-
   &__text {
     font-weight: 700;
     font-size: 14px;

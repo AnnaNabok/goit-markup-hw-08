@@ -23,6 +23,9 @@
     background-color: #188ce8;
     cursor: pointer;
   }
+  @media screen and (min-width: 1200px) {
+     min-width: 200px;
+  }
 }
 
 .subscribe-button__icon {
